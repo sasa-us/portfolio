@@ -131,7 +131,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	
 }
 
 address {
@@ -621,7 +621,45 @@ button:focus {
 	letter-spacing: 0.5px;
 }
 
+/* ------skills------ */
+.row .techLink {
+		display: block;
+		text-decoration: none;
+		color: #a3a3a3;
+		cursor: default;
+		
+	
+}
+.techIcon {
+    text-align: center;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 
+.d-block {
+    display: block!important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}  
+
+.techIcon img {
+	width: 33%;
+	align-items: center;
+  }
+ 
 /*--------------------*/
 /* PORTFOLIO */
 /*--------------------*/
