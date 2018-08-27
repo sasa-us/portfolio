@@ -38,7 +38,7 @@ if(empty($message['subject'])) {
 }
 
 //compare with phone number, if not 0-9 replace it with empty
-$message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
+// $message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
 
 //throw error if any error
 if($output['success']!==null) {
@@ -54,7 +54,7 @@ foreach($_POST as $key=> $value) {
 $mail = new PHPMailer;
 $mail->SMTPDebug = 0;           // 3 is tell me everything Enable verbose debug output. Change to 0 to disable debugging output.
 
-$mail->isSMTP();                // Set mailer to use SMTP.
+$mail->isSMTP();                // Set mailer to use SMTP.(Simple Mail Transfer Protocol
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
 $mail->SMTPAuth = true;         // Enable SMTP authentication
 
