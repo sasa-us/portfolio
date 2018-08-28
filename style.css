@@ -660,6 +660,7 @@ img {
 .techIcon img {
 	width: 33%;
 	align-items: center;
+	margin-top: 30px;
   }
  
 /*--------------------*/
@@ -855,10 +856,10 @@ img {
 	width: 100%;
 }
 
-.mu-testimonials-area h2 {
+/* .mu-testimonials-area h2 {
 	color: #fff;
 	text-align: center;
-}
+} */
 
 .mu-testimonials-block {
 	display: inline;
