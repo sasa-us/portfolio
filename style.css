@@ -423,7 +423,7 @@ button:focus {
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 100px 0 20px 0;
 	width: 100%;
 }
 
@@ -660,6 +660,7 @@ img {
 .techIcon img {
 	width: 33%;
 	align-items: center;
+	margin-top: 30px;
   }
  
 /*--------------------*/
@@ -855,10 +856,10 @@ img {
 	width: 100%;
 }
 
-.mu-testimonials-area h2 {
+/* .mu-testimonials-area h2 {
 	color: #fff;
 	text-align: center;
-}
+} */
 
 .mu-testimonials-block {
 	display: inline;
