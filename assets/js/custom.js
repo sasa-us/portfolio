@@ -163,13 +163,13 @@
 	/*  7. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )
 	/* ----------------------------------------------------------- */ 
 
-	$('.mu-filter-imglink').magnificPopup({
-	  type: 'image',
-	  mainClass: 'mfp-fade',
-	  gallery:{
-	    enabled:true
-	  }
-	});
+	// $('.mu-filter-imglink').magnificPopup({
+	//   type: 'image',
+	//   mainClass: 'mfp-fade',
+	//   gallery:{
+	//     enabled:true
+	//   }
+	// });
 
 	/* ----------------------------------------------------------- */
 	/*  8. CLIENT TESTIMONIALS (SLICK SLIDER)
