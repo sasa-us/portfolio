@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 require_once('email_config.php'); //store your alternative of username and pasw
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 
@@ -31,11 +32,11 @@ if(empty($message['message'])) {
 }
 
 //sanitize subject
-$message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-if(empty($message['subject'])) {
-    $output['success'] = false;
-    $output['messages'][] = 'missing subject key';
-}
+// $message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+// if(empty($message['subject'])) {
+//     $output['success'] = false;
+//     $output['messages'][] = 'missing subject key';
+// }
 
 //compare with phone number, if not 0-9 replace it with empty
 // $message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
@@ -88,8 +89,8 @@ $mail->addReplyTo($message['email'], $message['name']); //??? need variable user
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);    // the content will allow HTML content
 
-$message['subject'] = $message['name']. " has sent you message on you protfolio";
-$mail->Subject =  $message['subject'];
+$message['messages'] = $message['name']. " has sent you message on you protfolio";
+$mail->Subject =  $message['name'];
 //$mail->Subject = 'message from '. $_POST['name']. ' on '. date('Y-m-d H:i:s'). ' at '. $_SERVER['REMOTE_ADDR'] ;
 //$mail->Body    = 'This is the HTML message body <b>in bold!</b>';//because isHTML(true)
 
