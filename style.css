@@ -1299,6 +1299,24 @@ img {
 	background-color: #212529;
   }
   
+
+  a.eye-protector-processed {
+    transition: background-color 0.3s ease 0s;
+	background-color: rgb(238, 238, 238);
+	display: inline-block;
+    font-size: 16px;
+    padding: 2px 7px;
+    margin: 5px 7px;
+}
+.left-link {
+    float: left;
+    color: royalblue;
+}
+.right-link {
+    float: right;
+    color: royalblue;
+}
+
 /*--- end protfolio modal ---*/
 
 
