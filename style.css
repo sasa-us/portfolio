@@ -332,7 +332,7 @@ button:focus {
 
 #mu-featured-slider {
 	background-attachment: fixed;
-	background-image:  url("assets/images/sl_1.jpg");
+	background-image:  url("assets/images/sl-2.jpg");
 	background-size: cover;
 	background-position: center center;
 	display: inline;
@@ -487,6 +487,10 @@ button:focus {
 	text-align: center;
 }
 
+
+.mu-skill-progress-bar p {
+	font-size: 20px;
+}
 .mu-pro-percentage {
 	display: inline-block;
 	padding: 5px 0;
