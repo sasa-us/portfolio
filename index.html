@@ -45,7 +45,15 @@
 </head>
 
 <body>
-
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=1162298487212681&autoLogAppEvents=1';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<!-- Start Header -->
 	<header id="mu-header" class="" role="banner">
 		<div class="container">
@@ -54,7 +62,7 @@
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-						  aria-expanded="false">
+						    aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -161,14 +169,18 @@
 											<!-- Start skills progress bar -->
 
 											<div class="mu-skill-progress-bar">
-												<p>Thank you for visiting my website. I’m very enjoy developing web applications, producing high quality responsive
+												<p>Thank you for visiting my website. I’m very enjoy developing web applications, producing high quality
+													responsive
 													websites. </p>
-												<p>With a major in Computer Science, I gained solid foundational knowledge, developed strong problem solving skills,
-													time & complexity as well as stress management during projects development, and have a belief to be able to commit to a long-term
+												<p>With a major in Computer Science, I gained solid foundational knowledge, developed strong problem
+													solving skills,
+													time & complexity as well as stress management during projects development, and have a belief to be able
+													to commit to a long-term
 													goal and succeed.
-												</p>	
+												</p>
 												<p>
-													When not online, you can find me in Irvine, California — doing some workouts, trying out a new recipe for my family and friends…
+													When not online, you can find me in Irvine, California — doing some workouts, trying out a new recipe for
+													my family and friends…
 												</p>
 											</div>
 										</div>
@@ -592,7 +604,15 @@
 		<div class="container">
 			<div class="mu-footer-area">
 				<p class="mu-copy-right">&copy; Copyright
-					<a rel="nofollow" href="http://sharrylu.com">Sharry lu 2018</a>. All right reserved.</p>
+					<a rel="nofollow" href="http://sharrylu.com">Sharry lu 2018</a>. All right reserved.
+
+				</p>
+				<div class="fb-share-button" data-href="http://www.sharrylu.com/" data-layout="button" data-size="small"
+					data-mobile-iframe="true">
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.sharrylu.com%2F&amp;src=sdkpreparse"
+						class="fb-xfbml-parse-ignore">Share
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -617,7 +637,8 @@
 								<p class="item-intro text-muted"> Memory Match Game </p>
 								<img class="img-fluid d-block mx-auto" src="assets/images/portfolio/sesamestreet.gif" alt="seseamStreet homepage">
 								<p class="projectSummary">Player need click card to find two match card with 10 chancess to win </p>
-								<p class="projectSummary">the game should be finished in 1 minute with record of accuracy, player can pasue, start, and reset game during playing.</p>
+								<p class="projectSummary">the game should be finished in 1 minute with record of accuracy, player can pasue,
+									start, and reset game during playing.</p>
 								<h4 class="tech-title">Technologies used</h4>
 								<p class="tech-list">
 									<a class="eye-protector-processed">Javascript</a>
@@ -668,10 +689,11 @@
 								</p>
 								<div class="embed-responsive embed-responsive-16by9">
 									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NnDSjfpu8bo" frameborder="0" allow="autoplay; encrypted-media"
-									  allowfullscreen></iframe>
+									    allowfullscreen></iframe>
 								</div>
 								<p class="projectSummary">GamesFerret is a mobile game finder application</p>
-								<p class="projectSummary">User can search and get recommended mobile games by wizard. Login user can also save their favorite games during
+								<p class="projectSummary">User can search and get recommended mobile games by wizard. Login user can also save
+									their favorite games during
 									search</p>
 								<h4 class="tech-title">Technologies used</h4>
 								<p class="tech-list">
@@ -719,9 +741,10 @@
 								<p class="item-intro text-muted"> A system to manage students grades </p>
 								<div class="embed-responsive embed-responsive-16by9">
 									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JVCJ9L6a-K8" frameborder="0" allow="autoplay; encrypted-media"
-									  allowfullscreen></iframe>
+									    allowfullscreen></iframe>
 								</div>
-								<p class="projectSummary">Login user can manage their courses and grade in different operation, and Admin user can manage all students information</p>
+								<p class="projectSummary">Login user can manage their courses and grade in different operation, and Admin user
+									can manage all students information</p>
 								<p class="projectSummary">Grade average will be calculated automatically </p>
 								<h4 class="tech-title">Technologies used</h4>
 								<p class="tech-list">
