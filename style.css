@@ -1138,7 +1138,11 @@ img {
 	transition: all 0.5s;
 }
 
-
+div.linkedin-share {
+	display: inline-block;
+    position: relative;
+    top: 6px;
+}
 /* --- portfolio modal --- */
 
 #portfolio .portfolio-item {
