@@ -15,6 +15,13 @@ $(function() {
 		var formData = $(form).serialize();
 
 		// Submit the form using AJAX.
+		// add sending ... icon
+		
+		var i = $('<i>', {
+			class: 'fas fa-calculator'
+		});
+		$('#sendingLogo').append(i);
+
 		$.ajax({
 			type: 'POST',
 			url: $(form).attr('action'),
@@ -25,10 +32,13 @@ $(function() {
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
 
+
 			// Set the message text.
 			var emailtext = 'Your message has been sent.';
 			// $(formMessages).text(response);
 			$(formMessages).text(emailtext);
+
+			$('#sendingLogo').empty();
 
 			// Clear the form.
 			$('#name').val('');
@@ -40,7 +50,7 @@ $(function() {
 			// Make sure that the formMessages div has the 'error' class.
 			$(formMessages).removeClass('success');
 			$(formMessages).addClass('error');
-
+			$('#sendingLogo').empty();
 			// Set the message text.
 			if (data.responseText !== '') {
 				$(formMessages).text(data.responseText);
