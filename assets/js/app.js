@@ -18,7 +18,7 @@ $(function() {
 		// add sending ... icon
 		
 		var i = $('<i>', {
-			class: 'fas fa-calculator'
+			class: 'fa fa-spinner'
 		});
 		$('#sendingLogo').append(i);
 
