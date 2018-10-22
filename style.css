@@ -1106,7 +1106,11 @@ img {
 }
 
 
+/* sending icon */
 
+i.fa.fa-spinner.fa-spin {
+	font-size:44px;
+}
 /*--------------------*/
 /* FOOTER */
 /*--------------------*/
